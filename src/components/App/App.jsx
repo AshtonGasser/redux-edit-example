@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import Home from '../Home/Home';
 import './App.css';
-
+import Editform from '../StudentDetail/EditForm'
 
 
 function App() {
@@ -17,7 +17,11 @@ function App() {
             <Router>
                 <Route exact path="/" component={Home} />
                 {/* TODO Add Edit Route */}
-            </Router>
+                <Route exact path = '/edit'>
+                <Editform/>
+                </Route>
+            </Router >
+    
         </div>
     );
 
